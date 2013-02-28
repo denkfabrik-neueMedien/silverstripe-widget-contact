@@ -15,5 +15,9 @@
         "silverstripe/framework": "3.*",
         "composer/installers": "*",
         "denkfabrik-neue-medien/silverstripe-siteinfo": "*"
+    },
+    "extra":
+    {
+        "installer-name": "widget_Contact"
     }
 }
