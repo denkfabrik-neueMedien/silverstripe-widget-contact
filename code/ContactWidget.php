@@ -9,7 +9,7 @@ class ContactWidget extends Widget
 	/**
 	 * 
 	 */
-	static $db = array
+	public static $db = array
 	(
 		"FrontendTitle" => "Varchar(255)"
 	);
@@ -18,25 +18,25 @@ class ContactWidget extends Widget
 	/**
 	 * 
 	 */
-	static $defaults = array();
+	public static $defaults = array();
 	
 	
 	/**
 	 * 
 	 */
-	static $title = "Kontakt-Widget";
+	public static $title = "Kontakt-Widget";
 	
 	
 	/**
 	 * 
 	 */
-	static $cmsTitle = "Kontakt-Widget";
+	public static $cmsTitle = "Kontakt-Widget";
 	
 	
 	/**
 	 * 
 	 */
-	static $description = "Stellt die in der Seitenkonfiguration festgelegten Kontaktinformationen auf dieser Seite dar.";
+	public static $description = "Stellt die in den Seiteneinstellungen festgelegten Kontaktinformationen dar.";
 	
 	
 	
@@ -61,9 +61,9 @@ class ContactWidget extends Widget
 	 */
 	public function getCMSFields()
 	{
-		return new FieldSet
+		return new FieldList
 		(
-				new TextField("FrontendTitle", "Frontend Title")
+			new TextField("FrontendTitle", "Frontend Title")
 		);
 	}
 	
@@ -84,29 +84,7 @@ class ContactWidget extends Widget
 			Requirements::css("widget_Contact/css/contactwidget.min.css");
 		}
 		
-		$siteConfig = DataObject::get( "SiteConfig" );
-		
-		return $siteConfig;
-	}
-	
-		
-	/**
-	 * Return a obfuscated version of the defined
-	 * email address.
-	 */
-	public function MailObfuscated()
-	{
-		$siteInfo = DataObject::get( "SiteConfig" );
-	
-		if(!$siteInfo) return;
-	
-		$siteConfig = $siteInfo->First();
-	
-		if(!$siteConfig) return;
-	
-		$email = $siteConfig->email;
-	
-		return Email::obfuscate($email);
+		return SiteConfig::get()->First();
 	}
 }
 

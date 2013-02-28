@@ -1,0 +1,19 @@
+{
+    "name": "denkfabrik-neue-medien/silverstripe-widget-contact",
+    "description": "A widget to display contact informations on your website",
+    "type": "silverstripe-module",
+    "keywords": ["silverstripe", "widget", "contact", "contact informations"],
+    "authors": [
+    {
+        "name": "Marco Kernler",
+        "email": "marco.kernler@denkfabrik-neueMedien.de"
+    }
+    ],
+
+    "require":
+    {
+        "silverstripe/framework": "3.*",
+        "composer/installers": "*",
+        "denkfabrik-neue-medien/silverstripe-siteinfo": "*"
+    }
+}

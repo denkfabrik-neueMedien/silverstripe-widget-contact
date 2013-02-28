@@ -1,0 +1,9 @@
+de:
+  ContactWidget:
+    PHONE: "Telefon"
+    FAX: "Fax"
+    MOBILE: "Mobil"
+    EMAIL: "E-Mail"
+    WEBSITE: "Internet"
+    VATNUMBER: "USt-IdNr."
+    COMMERCIALREGISTER: "Handelsregister"
