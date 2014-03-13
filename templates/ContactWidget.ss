@@ -3,7 +3,7 @@
 
 	<h3>$FrontendTitle</h3>
 
-	<% control ContactInformations %>
+	<% with ContactInformations %>
 
 		<% if $Company1 %>
 			<p><b>$Company1</b></p>
@@ -20,7 +20,7 @@
 		<% end_if %>
 		
 		<% if $Street %>
-			<p>$Street $Streetnumber</p>
+			<p>$Street $StreetNumber</p>
 		<% end_if %>
 		
 		<% if $Zip %>
@@ -65,6 +65,6 @@
 			<p><span><%t ContactWidget.COMMERCIALREGISTER %>:</span> $CommercialRegister</p>
 		<% end_if %>
 		
-	<% end_control %>
+	<% end_with %>
 	
 </div>
