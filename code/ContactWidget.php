@@ -66,26 +66,30 @@ class ContactWidget extends Widget
 			new TextField("FrontendTitle", "Frontend Title")
 		);
 	}
-	
-	
-	/**
-	 * 
-	 * 
-	 */
-	public function ContactInformations()
-	{
-		// 	checks for the active environment type, to load minified css and js files if in live mode
-		if( Director::get_environment_type() == "dev" || Director::get_environment_type() == "test" )
-		{
-			Requirements::css("widget_Contact/css/contactwidget.css");
-		}
-		else
-		{
-			Requirements::css("widget_Contact/css/contactwidget.min.css");
-		}
-		
-		return SiteConfig::get()->First();
-	}
 }
 
-?>
+
+
+/**
+ * Class ContactWidget_Controller
+ */
+class ContactWidget_Controller extends WidgetController
+{
+    /**
+     * @return DataObject
+     */
+    public function ContactInformations()
+    {
+        // 	checks for the active environment type, to load minified css and js files if in live mode
+        if( Director::get_environment_type() == "dev" || Director::get_environment_type() == "test" )
+        {
+            Requirements::css("widget_Contact/css/contactwidget.css");
+        }
+        else
+        {
+            Requirements::css("widget_Contact/css/contactwidget.min.css");
+        }
+
+        return SiteConfig::get()->First();
+    }
+}
