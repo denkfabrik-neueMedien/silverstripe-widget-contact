@@ -11,7 +11,11 @@ class ContactWidget extends Widget
 	 */
 	public static $db = array
 	(
-		"FrontendTitle" => "Varchar(255)"
+		"FrontendTitle" => "Varchar(255)",
+        "Intro" => "HTMLText",
+        "ShowCompany" => "Boolean",
+        "ShowAddress" => "Boolean",
+        "ShowContact" => "Boolean"
 	);
 	
 	
@@ -63,7 +67,11 @@ class ContactWidget extends Widget
 	{
 		return new FieldList
 		(
-			new TextField("FrontendTitle", "Frontend Title")
+			new TextField("FrontendTitle", "Frontend Title"),
+            new TextareaField("Intro", "Einleitung"),
+            new CheckboxField("ShowCompany", "Firma anzeigen?"),
+            new CheckboxField("ShowAddress", "Adresse anzeigen?"),
+            new CheckboxField("ShowContact", "Kontaktdaten anzeigen?")
 		);
 	}
 }
