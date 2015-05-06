@@ -9,7 +9,7 @@ class ContactWidget extends Widget
 	/**
 	 * 
 	 */
-	public static $db = array
+    private static $db = array
 	(
 		"FrontendTitle" => "Varchar(255)",
         "Intro" => "HTMLText",
@@ -22,25 +22,25 @@ class ContactWidget extends Widget
 	/**
 	 * 
 	 */
-	public static $defaults = array();
+    private static $defaults = array();
 	
 	
 	/**
 	 * 
 	 */
-	public static $title = "Kontakt-Widget";
+    private static $title = "Kontakt-Widget";
 	
 	
 	/**
 	 * 
 	 */
-	public static $cmsTitle = "Kontakt-Widget";
+    private static $cmsTitle = "Kontakt-Widget";
 	
 	
 	/**
 	 * 
 	 */
-	public static $description = "Stellt die in den Seiteneinstellungen festgelegten Kontaktinformationen dar.";
+    private static $description = "Stellt die in den Seiteneinstellungen festgelegten Kontaktinformationen dar.";
 	
 	
 	
