@@ -14,7 +14,7 @@
     {
         "silverstripe/framework": "3.*",
         "composer/installers": "*",
-        "silverstripe/widgets": "dev-master",
+        "silverstripe/widgets": "1.1.0",
         "denkfabrik-neue-medien/silverstripe-siteinfo": "*"
     },
     "extra":
