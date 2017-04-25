@@ -12,9 +12,7 @@
 
     "require":
     {
-        "silverstripe/framework": "3.*",
-        "composer/installers": "*",
-        "silverstripe/widgets": "1.1.0",
+        "silverstripe/widgets": "dev-master",
         "denkfabrik-neue-medien/silverstripe-siteinfo": "*"
     },
     "extra":
