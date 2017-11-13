@@ -5,10 +5,10 @@
 
 
     <% if $Intro %>
-    	$Intro
+        $Intro
     <% end_if %>
 
-	<% loop $ContactInformations %>
+    <% loop $ContactInformations %>
 
         <div itemscope itemtype="http://schema.org/Organization">
             <% if $Company1 && $Top.ShowCompany %>
@@ -46,7 +46,7 @@
                 <% end_if %>
 
                 <% if $Email %>
-                    <strong><%t ContactWidget.EMAIL %>:</strong> <a href="$Email" itemprop="email">$Email</a>
+                    <strong><%t ContactWidget.EMAIL %>:</strong> <a href="mailto:$Email" itemprop="email">$Email</a>
                     <br>
                 <% end_if %>
 
@@ -55,6 +55,6 @@
                 <% end_if %>
             <% end_if %>
         </div>
-	<% end_loop %>
-	
+    <% end_loop %>
+    
 </article>
