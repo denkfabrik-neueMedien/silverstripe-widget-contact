@@ -19,7 +19,7 @@
     "require":
     {
         "silverstripe/widgets": "1.3.0",
-        "denkfabrik-neue-medien/silverstripe-siteinfo": "1.2.0"
+        "denkfabrik-neue-medien/silverstripe-siteinfo": "1.1.2"
     },
     "extra":
     {
