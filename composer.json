@@ -3,13 +3,19 @@
     "description": "A widget to display contact informations on your website",
     "type": "silverstripe-module",
     "keywords": ["silverstripe", "widget", "contact", "contact informations"],
+    "homepage": "https://github.com/denkfabrik-neueMedien/silverstripe-widget-contact",
+    "license": "MIT",
     "authors": [
-    {
-        "name": "Marco Kernler",
-        "email": "marco.kernler@denkfabrik-neueMedien.de"
-    }
+        {
+            "name": "Marco Kernler",
+            "email": "marco.kernler@denkfabrik-neueMedien.de",
+            "homepage": "http://www.denkfabrik-neueMedien.de"
+        }
     ],
-
+    "support": {
+        "issues": "https://github.com/denkfabrik-neueMedien/silverstripe-widget-contact/issues",
+        "source": "https://github.com/denkfabrik-neueMedien/silverstripe-widget-contact"
+    },
     "require":
     {
         "silverstripe/widgets": "1.3.0",
