@@ -12,6 +12,7 @@ class ContactWidget extends Widget
 	public static $db = array(
 		"FrontendTitle" => "Varchar(255)",
 		"Intro" => "HTMLText",
+		"RenderWithMicroData" => "Boolean",
 		"HideLogo" => "Boolean",
 		"HideGenericImage" => "Boolean",
 		"HideCompany1" => "Boolean",
@@ -70,6 +71,7 @@ class ContactWidget extends Widget
 		return new FieldList(
 			new TextField("FrontendTitle", "Frontend Title"),
 			new TextareaField("Intro", "Einleitung"),
+			new CheckboxField("RenderWithMicroData", "Adresse als Microdata rendern?"),
 			new CheckboxField("HideLogo", "Logo ausblenden?"),
 			new CheckboxField("HideGenericImage", "Allgmeines Bild ausblenden?"),
 			new CheckboxField("HideCompany1", "Firma1 ausblenden?"),
