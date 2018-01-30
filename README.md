@@ -1,5 +1,4 @@
 # Contact Widget
-Note: This module currently are not available for the 3.x.x Release of the CMS
 
 ## Requirements
 - SilverStripe >= 3.2, < 4
